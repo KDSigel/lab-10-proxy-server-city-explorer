@@ -15,8 +15,7 @@ describe('app routes', () => {
         'formatted_query': expect.any(String),
         'latitude': expect.any(String),
         'longitude': expect.any(String)
-      }
-      ;
+      };
 
       const data = await fakeRequest(app)
         .get('/location?search=portland')
